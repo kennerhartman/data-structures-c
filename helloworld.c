@@ -44,7 +44,9 @@ struct Books {
     int bookID;
 };
 
-// function to print each data type in the structure above
+// function to print each member in the structure above
+// I declare "book" as a parameter and must define "struct Books" so the function can access the data
+// I declare "int bookNumber" so I can pass an integer when I    declare this function 
 void printBook(struct Books book, int bookNumber) { 
     printf("\nBook number: %i", bookNumber);
     printf("\n%s", book.title);
@@ -56,13 +58,15 @@ void printBook(struct Books book, int bookNumber) {
 int main() {
     printf("Hello world!\n");
 
-    struct Books Book1;
+    // "expose" the struct to so "int main" can access the members of the the struct
+    struct Books Book1; 
     struct Books Book2;
     struct Books Book3;
 
     // Book #1
 
-    strcpy(Book1.title, "The C Programming Language 2nd Edition");
+    // using strcpy() to modify the data types; Book.~ acts like an object, but is not an object
+    strcpy(Book1.title, "The C Programming Language 2nd Edition"); 
     strcpy(Book1.author, "Brian Kernighan and Dennis Ritchie");
     strcpy(Book1.description, "A book about the C programming language, developed by Brian Kernighan and Dennis Ritchie");
     Book1.yearPublished = 1978;
@@ -85,6 +89,8 @@ int main() {
     "across the United States to find the entrance to the Underworld and stop a war between the gods\" "
     "(Rick Riordan, The Lightning Thief Rationale).");
     Book3.yearPublished = 2015;
+
+    // declare the function printBook and passing in the appropriate parameters
 
     printBook(Book1, 1);
     printBook(Book2, 2);
