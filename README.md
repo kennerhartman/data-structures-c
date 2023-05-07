@@ -1,7 +1,7 @@
 # Data Structure Word Problem Using C
 
 ## Description <hr>
-This is a simple C program that I created to help me better understand data structures in C (as there is no such thing as objects or classes in C).  I created a simple word problem so I would know what I wanted to achieve with this program.  [_See word problem below._](#word-problem)
+This is a simple C program that I created to help me better understand data structures in C (as there is no such thing as objects or classes in C).  I created a simple word problem so I would know what I wanted to achieve with this program.  [_See word problem below._](#word-problem-)
 
 <br>
 
