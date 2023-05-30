@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/project%20status-shelved-red"></img>
+
 # Data Structure Word Problem Using C
 
 ## Description <hr>
